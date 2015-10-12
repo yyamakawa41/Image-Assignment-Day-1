@@ -3,7 +3,7 @@
 -Reduce the width of the preview when aligned right to 40%, but remain centered
 -add another row of 5 on the bottom or right (onmousehover)
 -use atleast 2 over events (onmouseover)
-	www.w3school.com/jsref/dom_obj_event.asp -->
+	http://www.w3schools.com/jsref/dom_obj_event.asp -->
 
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
 		<h1>Unit 1 - Day 1 - gallery </h1>
 		<!--Wrapper fo the Thumbnails-->
 		<div class="thumbnails" style="text-align: center">
-			<img onmouseover="preview.src=img1.src" name="img1" src="images/image1.jpg" alt="">
+			<img onclick="myFunction()" onmouseover="preview.src=img1.src" name="img1" src="images/image1.jpg" alt="">
 			<figcaption>Swirly</figcaption>
 			<img onmouseover="preview.src=img2.src" name="img2" src="images/image2.jpg" alt="">
 			<figcaption>Trippy Colors</figcaption>
@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="thumbnailsRight" style="text-align: center">
-			<img onmouseover="preview.src=img1.src" name="img6" src="images/image1.jpg" alt="">
+			<img ondblclick="myFunctionDbl()" onmouseover="preview.src=img1.src" name="img6" src="images/image1.jpg" alt="">
 			<figcaption>Swirly</figcaption>
 			<img onmouseover="preview.src=img2.src" name="img7" src="images/image2.jpg" alt="">
 			<figcaption>Trippy Colors</figcaption>
@@ -53,6 +53,21 @@
 		<div class="preview">
 			<img name="preview" src="images/image3.jpg" alt="image">
 		</div>
+		<p id="demo"></p>		
+		<script>
+
+		function myFunction() {
+    	document.getElementById("demo").innerHTML = "You Clicked Me!?";
+		}
+		</script>
+
+		<p id="memo"></p>
+
+		<script>
+		function myFunctionDbl() {
+    	document.getElementById("memo").innerHTML = "Don't double click me!";
+		}
+		</script>
 	</div>
 </body>
 </html>
