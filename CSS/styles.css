@@ -41,3 +41,7 @@ h1{
 	width: 100%;
 	max-width: 100%;
 }
+
+figcaption{
+	text-align: center;
+}

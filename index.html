@@ -1,3 +1,11 @@
+
+<!-- -add captions below each thumbnail image (both top and left alignment)
+-Reduce the width of the preview when aligned right to 40%, but remain centered
+-add another row of 5 on the bottom or right (onmousehover)
+-use atleast 2 over events (onmouseover)
+	www.w3school.com/jsref/dom_obj_event.asp -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,10 +26,15 @@
 		<!--Wrapper fo the Thumbnails-->
 		<div class="thumbnails" style="text-align: center">
 			<img onmouseover="preview.src=img1.src" name="img1" src="images/image1.jpg" alt="">
+			<figcaption>Swirly</figcaption>
 			<img onmouseover="preview.src=img2.src" name="img2" src="images/image2.jpg" alt="">
+			<figcaption>Trippy Colors</figcaption>
 			<img onmouseover="preview.src=img3.src" name="img3" src="images/image3.jpg" alt="">
+			<figcaption>Comet</figcaption>
 			<img onmouseover="preview.src=img4.src" name="img4" src="images/image4.jpg" alt="">
+			<figcaption>Saturn</figcaption>
 			<img onmouseover="preview.src=img5.src" name="img5" src="images/image5.jpg" alt="">
+			<figcaption>UV Saturn</figcaption>
 		</div>
 
 		<div class="preview">
